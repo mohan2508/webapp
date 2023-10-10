@@ -50,7 +50,20 @@ def main():
     st.success(diagnosis) 
     
 if __name__ == '__main__':
-    main()      
+    main()
+
+hide_streamlit_style = """
+<style>
+#MainMenu{visibility:hidden}
+footer{visibility:hidden}
+Manage app{visibility:hidden}
+deploy{visibility:hidden}
+Header{visibility:hidden}
+footer{visibility:hidden}
+
+</style>"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)           
+         
     
         
      
