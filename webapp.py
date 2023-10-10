@@ -24,22 +24,23 @@ def main():
     
     st.title('Diabetic Prediction App')
     
-    Pregnancies = st.text_input('Number of pregnancies')
-    
-    Glucose = st.text_input('Blood Glucose Level')
-    
-    BloodPressure = st.text_input('BloodPressure Value')
-    
-    SkinThickness= st.text_input('SkinThickness Value')
-    
-    Insulin= st.text_input('Insulin Level')
-    
-    BMI = st.text_input('BMI Value')
-    
-    DiabetesPedigreeFunction = st.text_input(' DiabetesPedigreeFunction')
-    
-    Age = st.text_input('Present Age of the person')
-
+    column1,column2,column3 = st.columns(3)
+    with column1:
+        Pregnancies = st.text_input('Number of pregnancies')
+    with column2:
+        Glucose = st.text_input('Blood Glucose Level')
+    with column3:
+        BloodPressure = st.text_input('BloodPressure Value')
+    with column1:
+        SkinThickness= st.text_input('SkinThickness Value')
+    with column2:
+        Insulin= st.text_input('Insulin Level')
+    with column3:
+        BMI = st.text_input('BMI Value')
+    with column1:
+        DiabetesPedigreeFunction = st.text_input(' DiabetesPedigreeFunction')
+    with column2:
+        Age = st.text_input('Present Age of the person')
     
     diagnosis = ''
     
