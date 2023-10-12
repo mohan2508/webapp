@@ -6,8 +6,7 @@ import streamlit as st
 load_model = pickle.load(open('diabetes_model.sav', 'rb'))   
 
 def diabetes_prediction(input_data):
-    input_data=( 8,183,	64	,0,	0	,23.3,	0.672,	32) #input data to array
-    
+      
     input_data_as_numpy_array = np.asarray(input_data)  #reshape the array for prediction
     
     input_data_reshaped = input_data_as_numpy_array.reshape(1,-1)
